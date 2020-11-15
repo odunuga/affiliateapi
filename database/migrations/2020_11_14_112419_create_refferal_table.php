@@ -17,7 +17,7 @@ class CreateRefferalTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('refcode');
-            $table->timestamps();
+            $table->timestamp('added_on');
         });
     }
 

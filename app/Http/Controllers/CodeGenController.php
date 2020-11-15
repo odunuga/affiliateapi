@@ -14,7 +14,7 @@ class CodeGenController extends Controller
 
     public function getName()
     {
-        $fetcher = DB::select('select * from refferal');
+        $fetcher = DB::select('select * from users where refferal_code');
         return response()->json($fetcher);
     }
 }
